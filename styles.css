@@ -1,0 +1,305 @@
+@font-face {
+  font-family: Bodoni72;
+  src: url('assests/fonts/BodoniSvtyTwoITCTT-Book.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/BodoniSvtyTwoITCTT-Book.woff')  /* Pretty Modern Browsers */
+       url('assets/fonts/BodoniFLF-Roman.ttf') /* Safari, Android, iOS */
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+html {
+  font-size: calc(0.5rem + (1vw - 4.8px) * 1.1111);
+  margin: 0 auto;
+  font-family: Bodoni72, serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* font-size: 1rem; */
+  margin: 0 auto;
+  font-family: Bodoni72, serif;
+  background-color: white;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: Bodoni72, serif;
+  font-weight: bold;
+}
+
+p{
+  font-family: Bodoni72, serif;
+  vertical-align: middle;
+}
+
+nav{
+  font-size: 1em;
+  font-family: helvetica, sans-serif;
+  font-weight: lighter;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar{
+  overflow: hidden;
+}
+
+#navbar a{
+  color: black;
+}
+
+#navbar a:hover {
+  background-color: rgb(201,95,129, 0.65);
+  color: white;
+  font-weight: 350;
+  border-radius: 3%;
+  display: block;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  /* animation: slide-down 1s; */
+  margin: 0 auto;
+  padding-top: 0.5%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+@keyframes slide-down {
+      from {background-color: white;}
+      to {background-color: pink;}
+}
+
+#logo{
+  width: 25%;
+}
+
+#navbar-logo{
+  margin: 0 auto;
+}
+
+.big-p{
+  font-size: 1.4em;
+}
+
+.img-fluid{
+   max-width: 100%;
+   height: auto;
+ }
+
+.icon{
+  width: 30%;
+}
+
+.text-small{
+  font-size: 0.8em;
+}
+
+.sans{
+  font-family: helvetica;
+  font-weight: lighter;
+}
+
+.sans-bold{
+  font-family: helvetica;
+  font-weight: normal;
+}
+
+.sans-h{
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+.green{
+  background-color: #6c7b52;
+}
+
+.pink{
+  background-color: #c95f81;
+}
+
+.flower{
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  padding-bottom: 3%;
+}
+
+#background-casamento{
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-repeat: repeat-y;
+  background-position: center center;
+}
+
+#cover{
+  margin: 0 auto;
+  text-align: center;
+  background: url("assets/mainpic.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#maintext {
+    margin: 0 auto;
+}
+
+#oCasamento{
+  display: grid;
+  background: url("assets/icons/Untitled-1.png") no-repeat center center;
+  position: relative;
+}
+
+#sobreNos{
+  background-color: #f6f6f6;
+  position: relative;
+}
+
+#img-sobrenos{
+  max-width: 80%;
+}
+
+#listaPresentes{
+  background-color: #f6f6f6;
+  position: relative;
+}
+
+#gift{
+  width: 90%;
+}
+
+
+#footer{
+  font-size: 0.95em;
+  background: url("assets/icons/Untitled-1-half.png") no-repeat  center center;
+  position: relative;
+}
+
+.bkg{
+  background-color: white;
+  /* opacity: 0.95; */
+}
+
+.pad{
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+#span-footer{
+  border-radius: 15%;
+}
+
+
+/* -------------- media queries ----------------- */
+
+@media only screen and (min-width: 1600px) {
+
+  nav {
+    font-size: calc(0.1rem + (1vw - 4.8px) * 1.1111);
+  }
+
+  html {
+    font-size: calc(0.3rem + (1vw - 4.8px) * 1.1111);
+    margin: 0 auto;
+    font-family: Bodoni72, serif;
+  }
+
+  #logo{
+    width: 40%;
+  }
+
+  #oCasamento{
+    display: grid;
+    background: url("assets/icons/Untitled-1-big.png") no-repeat center center;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 429px) {
+
+  #oCasamento{
+    display: grid;
+    background: url("assets/icons/Untitled-2.png") no-repeat  center center;
+    position: relative;
+  }
+
+  #img-sobrenos{
+    max-width: 45%;
+  }
+
+  #logo{
+    max-width: 50%;
+  }
+
+  .icon{
+    width: 15%;
+  }
+
+  #gift{
+    width: 45%;
+    padding: 5%;
+  }
+
+  #footer{
+    background: url("assets/icons/Untitled-2.png") no-repeat center center;
+  }
+
+  .pad{
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+}
+
+@media only screen and (max-width: 760px) and (min-width: 430px) {
+  #oCasamento{
+    display: grid;
+    background: url("assets/icons/Untitled-2.png") no-repeat  center center;
+    position: relative;
+  }
+
+  #img-sobrenos{
+    max-width: 45%;
+  }
+
+  #gift{
+    width: 45%;
+    padding: 5%;
+  }
+
+  #logo{
+    max-width: 70%;
+
+  }
+
+  .icon{
+    width: 10%;
+  }
+
+  #footer{
+    background: url("assets/icons/Untitled-2.png") no-repeat center center;
+  }
+
+  .pad{
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+
+
+}

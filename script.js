@@ -1,3 +1,5 @@
+//sticky navbar
+
 window.onscroll = function() { myFunction() };
 
 var navbar = document.getElementById( "navbar" );
@@ -11,5 +13,3 @@ function myFunction() {
     navbar.classList.remove( "sticky" );
   }
 }
-
-//fazer um botao back to top ou algo assim

@@ -57,11 +57,15 @@ nav{
   display: block;
 }
 
-/* Page content */
-.content {
-  padding: 16px;
-}
 
+/* Page content */
+/* .content {
+  padding: 16px;
+} */
+
+#main-container{
+  width: 100%;
+}
 
 .sticky {
   position: fixed;
@@ -70,12 +74,11 @@ nav{
   z-index: 1;
   /* animation: slide-down 1s; */
   margin: 0 auto;
-  padding-top: 0.5%;
 }
 
-.sticky + .content {
+/* .sticky + .content {
   padding-top: 60px;
-}
+} */
 
 @keyframes slide-down {
       from {background-color: white;}
@@ -150,10 +153,7 @@ nav{
 }
 
 #cover{
-  margin: 0 auto;
-  text-align: center;
-  background: url("assets/mainpic.jpg") no-repeat center center;
-  background-size: cover;
+  background-color: black;
 }
 
 #maintext {
@@ -208,7 +208,7 @@ nav{
 
 /* -------------- media queries ----------------- */
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1400px) {
 
   nav {
     font-size: calc(0.1rem + (1vw - 4.8px) * 1.1111);
@@ -230,6 +230,22 @@ nav{
     width: 100%;
   }
 
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1930px) {
+  body{
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+}
+
+@media only screen and (min-width: 1931px) {
+  body{
+    padding-left: 16%;
+    padding-right: 16%;
+
+  }
 }
 
 @media only screen and (max-width: 429px) {

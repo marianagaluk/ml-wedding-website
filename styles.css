@@ -85,55 +85,55 @@ nav{
       to {background-color: pink;}
 }
 
-#logo{
+#logo {
   width: 25%;
 }
 
-#navbar-logo{
+#navbar-logo {
   margin: 0 auto;
 }
 
-.big-p{
+.big-p {
   font-size: 1.4em;
 }
 
-.img-fluid{
+.img-fluid {
    max-width: 100%;
    height: auto;
  }
 
-.icon{
+.icon {
   width: 30%;
 }
 
-.text-small{
-  font-size: 0.8em;
+.text-small {
+  font-size: 0.7em;
 }
 
-.sans{
+.sans {
   font-family: helvetica;
   font-weight: lighter;
 }
 
-.sans-bold{
+.sans-bold {
   font-family: helvetica;
   font-weight: normal;
 }
 
-.sans-h{
+.sans-h {
   font-family: helvetica;
   font-weight: bold;
 }
 
-.green{
+.green {
   background-color: #6c7b52;
 }
 
-.pink{
+.pink {
   background-color: #c95f81;
 }
 
-.flower{
+.flower {
   z-index: 1;
   position: absolute;
   left: 50%;
@@ -142,7 +142,7 @@ nav{
   padding-bottom: 3%;
 }
 
-#background-casamento{
+#background-casamento {
   z-index: -1;
   position: absolute;
   left: 50%;
@@ -152,26 +152,41 @@ nav{
   background-position: center center;
 }
 
-#cover{
-  background-color: black;
+#cover {
+  /* background-color: black; */
+  background: url("assets/mainpic_2_1440.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#mainImg {
+  position: absolute;
+  z-index: -1;
+}
+
+#mainCover {
+  position: relative;
+  z-index: 0;
 }
 
 #maintext {
     margin: 0 auto;
 }
 
-#oCasamento{
+#oCasamento {
   display: grid;
   background: url("assets/icons/Untitled-1.png") no-repeat center center;
   position: relative;
 }
 
-#sobreNos{
+#sobreNos {
   background-color: #f6f6f6;
   position: relative;
 }
 
-#img-sobrenos{
+#img-sobrenos {
   max-width: 80%;
 }
 
@@ -220,22 +235,26 @@ nav{
     font-family: Bodoni72, serif;
   }
 
-  #logo{
+  #logo {
     width: 40%;
   }
 
-  #oCasamento{
+  #oCasamento {
     display: grid;
     background: url("assets/icons/Untitled-1-big.png") no-repeat center center;
     width: 100%;
+  }
+
+  #mainImg {
+    margin: 0 auto;
   }
 
 }
 
 @media only screen and (min-width: 1440px) and (max-width: 1930px) {
   body{
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 
   }
 }
@@ -254,6 +273,10 @@ nav{
     display: grid;
     background: url("assets/icons/Untitled-2.png") no-repeat  center center;
     position: relative;
+  }
+
+  #sobreNos h1{
+    padding-bottom: 4%;
   }
 
   #img-sobrenos{
@@ -280,6 +303,10 @@ nav{
   .pad{
     padding-left: 35%;
     padding-right: 35%;
+  }
+
+  .text-small {
+    font-size: 0.8em;
   }
 }
 
@@ -317,5 +344,12 @@ nav{
     padding-right: 35%;
   }
 
+  .text-small {
+    font-size: 0.8em;
+  }
+
+  #sobreNos h1{
+    padding-bottom: 4%;
+  }
 
 }

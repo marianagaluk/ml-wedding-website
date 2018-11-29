@@ -57,12 +57,6 @@ nav{
   display: block;
 }
 
-
-/* Page content */
-/* .content {
-  padding: 16px;
-} */
-
 #main-container{
   width: 100%;
 }
@@ -72,18 +66,13 @@ nav{
   top: 0;
   width: 100%;
   z-index: 1;
-  /* animation: slide-down 1s; */
   margin: 0 auto;
 }
 
-/* .sticky + .content {
-  padding-top: 60px;
-} */
-
-@keyframes slide-down {
+/* @keyframes slide-down {
       from {background-color: white;}
       to {background-color: pink;}
-}
+} */
 
 #logo {
   width: 25%;
@@ -153,22 +142,11 @@ nav{
 }
 
 #cover {
-  /* background-color: black; */
   background: url("assets/mainpic_2_1440.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-#mainImg {
-  position: absolute;
-  z-index: -1;
-}
-
-#mainCover {
-  position: relative;
-  z-index: 0;
 }
 
 #maintext {

@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>Mariana e Luis</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
     <!-- javascript -->
@@ -17,44 +17,31 @@
 
   </head>
 
-  <body>
+  <body onresize="getSize()">
 
 
-
-    <div id="main-container" class="cover-container p-0 m-0">
-
-      <!-- navigation -->
-      <nav id="navbar" class="navbar navbar-expand-sm navbar-light py-0 mx-auto">
-        <div id="navbar-logo" class="navbar-brand m-1"><img id="logo" class="img-fluid m-0" src="assets/logo.svg" alt="logo" style="width:70px; height:60px " /></div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul id="navbar-ul" class="navbar-nav align-self-center mx-auto">
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#sobreNos">Os Noivos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#oCasamento">O Casamento</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#listaPresentes">Lista de Presentes</a>
-            </li>
-          </ul>
-        </nav>
+    <nav id="navbar" class="">
+      <div class="toggle-nav">
+        <span class="hamburger">|||</span>
       </div>
-    </div>
+        <ul id="navbar-ul" class="">
+          <li class=""><a class="text-uppercase" href="#cover">Home</a></li>
+          <li class=""><a class="text-uppercase" href="#sobreNos">Os Noivos</a></li>
+          <li class=""><a class="text-uppercase" href="#oCasamento">O Casamento</a></li>
+          <li class=""><a class="text-uppercase" href="#listaPresentes">Lista de Presentes</a></li>
+        </ul>
+    </nav>
 
-  <div id="cover">
+  <div id="cover" class="section">
     <!-- _____________________________ COVER IMAGE _____________________________ -->
       <img id="mainCover" class="mx-auto d-block img-fluid" src="assets/mainpic_2.gif" alt="Uma foto do Luis e da Mari"/>
   </div>
 
   <!-- _____________________________ SECTION 1 _____________________________ -->
 
-  <div class="container-fluid px-5 py-5" id="sobreNos">
+  <div class="section container-fluid px-5 py-5" id="sobreNos">
 
-    <h1 class="pt-5 pl-5">Os Noivos</h1>
+    <h1 class="pt-5 pb-2 pl-5">Os Noivos</h1>
     <div class="row align-self-center px-5">
       <div class="col-md-7 ml-md-auto align-self-center pl-5">
         <p class="sans">
@@ -78,7 +65,7 @@
 
   <!-- __________________________________ SECTION 2 __________________________________ -->
 
-  <div class="container-fluid px-5" id="oCasamento">
+  <div class="section container-fluid px-5 sans-bold" id="oCasamento">
 
     <h1 class="mb-0 mt-5 pt-5 pb-3 pl-5 bkg">O Casamento</h1>
     <div class="row pt-5 text-center bkg mx-0 px-4">
@@ -92,26 +79,26 @@
       <div class="col-md-2 ml-md-auto"></div>
       <div class="col-md-4 ml-md-auto">
         <img class="icon pb-3" src="assets/icons/glass.png" alt="Icone taças"/>
-        <h4 class="sans-h py-3">Recepção 18:30</h4>
+        <h4 class="sans-h py-3">Recepção 18:00</h4>
         <p><span class="sans-bold">Sociedade de Engenharia do RS</span><br />
           <span class="text-small sans">Avenida Coronel Marcos, 163 - Pedra Redonda</span></p>
       </div>
       <div class="col-md-1 ml-md-auto"></div>
     </div>
-    <div class="row mb-5 mx-0 text-center bkg px-3 pt-3">
+    <div class="row mb-5 mx-0 text-center bkg px-3 pt-3 pb-5">
       <div class="col-md-1 ml-md-auto"></div>
       <div class="col-md-4 ml-md-auto">
         <img class="icon py-3" src="assets/icons/hat.png" alt="Icone chapéu"/>
         <h4 class="sans-h py-3">Dress Code</h4>
         <p><span class="sans-bold">Traje Social ou Passeio Completo</span><br />
-          <span class="text-small sans">Terno e gravata para os homens e vestidos de tecidos mais nobres para as mulheres</span></p>
+          <span class="text-small sans">Terno e gravata para os homens e vestidos de<br /> tecidos mais nobres para as mulheres</span></p>
       </div>
       <div class="col-md-2 ml-md-auto"></div>
       <div class="col-md-4 ml-md-auto">
         <img class="icon py-3" src="assets/icons/letter.png" alt="Icone carta"/>
         <h4 class="sans-h py-3">Confirmação de Presença</h4>
         <p class="sans-bold">Até 28 de Fevereiro</br>
-          <span class="text-small sans">Para que possamos organizar este dia especial, a confirmação de presença será até o dia 28/02/2019.<br />
+          <span class="text-small sans">A confirmação de presença será até o dia 28/02/2019.<br />
             Confirmações através do email xxxx@xxxx.xxx</span></p>
       </div>
       <div class="col-md-1 ml-md-auto"></div>
@@ -120,7 +107,7 @@
   </div>
 
   <!-- _____________________________ SECTION 3 _____________________________ -->
-  <div class="container-fluid px-5 py-5" id="listaPresentes">
+  <div class="section container-fluid px-5 py-5" id="listaPresentes">
 
     <h1 class="pt-5 pl-5">Lista de Presentes</h1>
     <div class="row px-5 py-4">
@@ -128,7 +115,12 @@
         <p class="sans"> Claro que o nosso maior presente é compartilhar com vocês este momento.
           Uma vez que estamos em Dublin, não podemos pedir uma lista normal de presentes, então a solução
           é nos presentear em dinheiro.</p>
-          <button type="button" class="btn sans-bold pink text-white mt-2">Presenteie-nos</button>
+        <p class="sans">Para dar um significado mais especial para os presentes recebidos, iremos doar
+          10% do total que nos for presenteado para duas instituições que conhecemos e acreditamos, a
+          <a href="https://www.facebook.com/Apaetenenteportela/" target="_blank">APAE Tenente Portela</a>, em
+          Tenente Portela, e o <a href="https://www.facebook.com/larguanella/" target="_blank">Lar São Luís
+          Guanella</a>, em Porto Alegre.</p>
+          <button type="button" onclick="hideUnhide()" class="btn btn_presente sans-bold pink mt-2">Presenteie-nos</button>
         </div>
         <div class="col-md-2 ml-md-auto"></div>
         <div class="col-md-4 ml-md-auto align-self-center">
@@ -137,19 +129,54 @@
 
       </div>
 
+      <div id="gift-options" class="section container-fluid px-5 py-5">
+
+        <h4 class="sans pt-3 text-center">Podemos ser presenteados de três modos:</h4>
+
+          <div class="row px-5 py-4">
+          <div class="col-md-4 ml-md-auto align-self-center pl-5">
+            <h5 class="sans-bold">Online</h5>
+            <p class="sans">Presenteie-nos através do próprio website. É rápido, fácil e seguro.</p>
+              <a href="lista-presentes.html" class="btn btn_presente btn-primary sans-bold pink text-white align-self-center">Presentear</a>
+            </div>
+
+            <div class="col-md-4 ml-md-auto align-self-center pl-5">
+              <h5 class="sans-bold mt-3">Transferência Bancária</h5>
+              <p class="sans">Presenteie-nos através de transferência ou depósito bancário.
+
+              </p>
+            </div>
+
+            <div class="col-md-4 ml-md-auto align-self-center pl-5">
+              <h5 class="sans-bold">No grande dia</h5>
+              <p class="sans">Você também pode colocar seu presente em um envelope e
+                nos entregar no grande dia.</p>
+            </div>
+          </div>
+          </div>
 
 
       <!-- _____________________________ FOOTER _____________________________ -->
-      <div id="footer" class="pt-5 pb-2 pad">
-        <span id="span-footer" class="text-center text-small sans-bold p-3 mx-auto d-block bkg">Copyright 2018, Mariana e Luis</span>
+      <div id="footer" class="section pt-5 pb-5 text-center">
+        <span id="span-footer" class=" mx-auto sans-bold py-3 px-2">Copyright 2018, Mariana e Luis</span>
       </div>
 
       <!-- Bootstrap core JavaScript ================================================== -->
-
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-      <!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> -->
-      <script src="dist/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        //if the DOM is loaded
+        $(document).ready(function() {
+          $('nav ul').click(function () {
+            $(this).toggleClass('expand').css('display', '');
+          });
+          $('.hamburger').click(function () {
+            //400 is the speed in which it toggles
+            $('nav ul').slideToggle(400, function() {
+              $(this).toggleClass('expand').css('display', '');
+            });
+          });
+        });
+      </script>
 
     </body>
   </html>

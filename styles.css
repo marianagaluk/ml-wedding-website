@@ -8,57 +8,57 @@
 /* --------------------------------------------------------------------------------------- */
 
 html {
-  font-size: calc(0.5rem + (1vw - 4.8px) * 1.1111);
+  font-size: calc(0.3rem + (1vw - 4.3px) * 1.1111);
   margin: 0 auto;
-  font-family: Bodoni72, serif;
+  font-family: helvetica, arial, sans-serif;
   scroll-behavior: smooth;
+  padding-top: 0;
 }
 
 body {
-  /* font-size: 1rem; */
   margin: 0 auto;
   font-family: Bodoni72, serif;
   background-color: white;
   position: relative;
 }
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5 {
   font-family: Bodoni72, serif;
   font-weight: bold;
 }
 
-p{
+p {
   font-family: Bodoni72, serif;
   vertical-align: middle;
 }
 
-nav{
-  font-size: 1em;
-  font-family: helvetica, sans-serif;
-  font-weight: lighter;
-  background-color: white;
-  margin: 0;
-  padding: 0;
+
+nav.sticky {
+  transition: 0.5s;
+  background: white;
 }
 
-#navbar{
+
+#navbar {
   overflow: hidden;
 }
 
-#navbar a{
+#navbar a {
   color: black;
+  text-decoration: none;
 }
 
-#navbar a:hover {
-  background-color: rgb(201,95,129, 0.65);
-  color: white;
-  font-weight: 350;
-  border-radius: 3%;
+/* #navbar a:hover { */
+  /* background-color: rgb(201,95,129); */
+  /* border: 2px solid #c95f81; */
+  /* color: white; */
+  /* border-radius: 0.25rem;
   display: block;
-}
+  font-size: 1.1rem;
+} */
 
-#main-container{
-  width: 100%;
+#main-container {
+  background: rgba(255, 255, 255, 0.0);
 }
 
 .sticky {
@@ -67,23 +67,11 @@ nav{
   width: 100%;
   z-index: 1;
   margin: 0 auto;
+  box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
 }
-
-/* @keyframes slide-down {
-      from {background-color: white;}
-      to {background-color: pink;}
-} */
 
 #logo {
-  width: 25%;
-}
-
-#navbar-logo {
-  margin: 0 auto;
-}
-
-.big-p {
-  font-size: 1.4em;
+  width: 50%;
 }
 
 .img-fluid {
@@ -142,6 +130,7 @@ nav{
 }
 
 #cover {
+  position: relative;
   background: url("assets/mainpic_2_1440.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -162,59 +151,220 @@ nav{
 #sobreNos {
   background-color: #f6f6f6;
   position: relative;
+  padding-top: 20%;
 }
 
 #img-sobrenos {
   max-width: 80%;
 }
 
-#listaPresentes{
+#listaPresentes {
   background-color: #f6f6f6;
   position: relative;
 }
 
-#gift{
+#gift {
   width: 90%;
 }
 
+#gift-options {
+  display: none;
+}
 
-#footer{
-  font-size: 0.95em;
-  background: url("assets/icons/Untitled-1-half.png") no-repeat  center center;
+.btn_presente {
+  box-shadow: 0 5px #999;
+  border: 0;
+  color: white;
+}
+
+.btn_presente:hover {
+  /* background-color: rgb(64, 64, 64); */
+  background-color: #6c7b52;
+  /* color: black; */
+  font-weight: 350;
+}
+
+.btn_presente:active {
+  background-color: #6c7b52;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* INTERNAL PAGES */
+
+
+/* FOOTER */
+
+#footer {
+  background: url("assets/icons/Untitled-1-half.png") no-repeat  50% 60%;
   position: relative;
 }
 
-.bkg{
+.bkg {
   background-color: white;
   /* opacity: 0.95; */
 }
 
-.pad{
-  padding-left: 40%;
-  padding-right: 40%;
+
+#span-footer {
+  font-size: 0.8em;
+  font-weight: 400;
+  background-color: rgb(255,255,255, 0.8);
+  border-radius: 0.25rem;
 }
 
-#span-footer{
-  border-radius: 15%;
 }
 
+.secondaryCover {
+  max-width: 100%;
+  max-height: 90%;
+}
+
+.color_pallette {
+  max-width: 40%;
+}
+
+#saudacao_padrinhos {
+  /* font-style: italic; */
+}
+
+#madrinhas_padrinhos {
+  background-color: #f6f6f6;
+}
+
+#icon-heart {
+  width: 2%;
+}
+
+#calendar {
+  width: 40%;
+}
+
+
+nav {
+  position: relative;
+  min-height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1% 2%;
+}
+
+nav a {
+  text-decoration: none;
+  display: flex;
+  font-family: helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+ul li a:before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 0%;
+}
+
+ul li a:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #c95f81;
+}
+
+ul li a:hover:after {
+  /* transform: translateX(-50%); */
+  width: 100%;
+  transition: .5s;
+}
+
+.toggle-nav .hamburger {
+  display: none;
+}
+
+.expand {
+  display: block;
+}
+
+
+@media only screen and (max-width: 768px){
+  .toggle-nav .hamburger {
+    display: block;
+  }
+
+  .toggle-nav {
+    height: 48px;
+  }
+
+  .hamburger {
+    margin-right: 15px;
+    float: right;
+    font-size: 3rem;;
+    transform: rotate(90deg);
+    height: 40px;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  nav li:last-child {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  ul li a:hover:after {
+    transform: translateX(-50%);
+    width: 50%;
+    transition: .5s;
+  }
+}
 
 /* -------------- media queries ----------------- */
 
 @media only screen and (min-width: 1400px) {
 
-  nav {
-    font-size: calc(0.1rem + (1vw - 4.8px) * 1.1111);
-  }
-
   html {
-    font-size: calc(0.3rem + (1vw - 4.8px) * 1.1111);
-    margin: 0 auto;
-    font-family: Bodoni72, serif;
+    font-size: 1rem;
   }
 
   #logo {
-    width: 40%;
+    width: 30%;
   }
 
   #oCasamento {
@@ -229,95 +379,170 @@ nav{
 
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 1930px) {
-  body{
-    margin-left: 10%;
-    margin-right: 10%;
-
+@media only screen and (min-width: 1400px) and (max-width: 1930px) {
+  body {
+    /* margin: 0;
+    padding: 0; */
   }
+
+  #logo {
+    width: 55%;
+  }
+
+  #portico {
+    width: 90%;;
+  }
+
+  #calendar {
+    width: 70%;
+  }
+
 }
 
 @media only screen and (min-width: 1931px) {
-  body{
-    padding-left: 16%;
-    padding-right: 16%;
+  body {
+    /* padding-left: 16%;
+    padding-right: 16%; */
 
   }
+
+  #portico {
+    width: 110%;;
+  }
+
+  #calendar {
+    width: 80%;
+  }
+
+  #logo {
+    width: 30%;
+  }
+
+  #calendar {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  #logo {
+    padding: 1%;
+  }
+
+  ul {
+    text-align: center;
+    padding: 1% 1% 3% 1%;
+  }
+
+  header.sticky {
+    max-height: 10%;
+  }
+
 }
 
 @media only screen and (max-width: 429px) {
 
-  #oCasamento{
+  html, body {
+    margin: 0 auto;
+    padding: 1%;
+  }
+
+  #oCasamento {
     display: grid;
     background: url("assets/icons/Untitled-2.png") no-repeat  center center;
     position: relative;
   }
 
-  #sobreNos h1{
+  #sobreNos h1 {
     padding-bottom: 4%;
   }
 
-  #img-sobrenos{
+  #img-sobrenos {
     max-width: 45%;
   }
 
-  #logo{
-    max-width: 50%;
+  #logo {
+    width: 30%;
   }
 
-  .icon{
+  .icon {
     width: 15%;
   }
 
-  #gift{
+  #gift {
     width: 45%;
     padding: 5%;
   }
 
-  #footer{
+  #footer {
     background: url("assets/icons/Untitled-2.png") no-repeat center center;
   }
 
-  .pad{
+  .pad {
     padding-left: 35%;
     padding-right: 35%;
   }
 
   .text-small {
-    font-size: 0.8em;
+    font-size: 0.85em;
+  }
+
+  #calendar {
+    width: 25%;
+  }
+
+  #portico {
+    width: 25%;
+  }
+
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 768px) {
+  #calendar {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 430px) {
+  #calendar {
+    width: 30%;
+  }
+
+  #portico {
+    width: 25%;
   }
 }
 
 @media only screen and (max-width: 760px) and (min-width: 430px) {
-  #oCasamento{
+
+  #oCasamento {
     display: grid;
     background: url("assets/icons/Untitled-2.png") no-repeat  center center;
     position: relative;
   }
 
-  #img-sobrenos{
+  #img-sobrenos {
     max-width: 45%;
   }
 
-  #gift{
+  #gift {
     width: 45%;
     padding: 5%;
   }
 
-  #logo{
-    max-width: 70%;
+  #logo {
+    width: 40%;
 
   }
 
-  .icon{
+  .icon {
     width: 10%;
   }
 
-  #footer{
+  #footer {
     background: url("assets/icons/Untitled-2.png") no-repeat center center;
   }
 
-  .pad{
+  .pad {
     padding-left: 35%;
     padding-right: 35%;
   }
@@ -326,8 +551,10 @@ nav{
     font-size: 0.8em;
   }
 
-  #sobreNos h1{
+  #sobreNos h1 {
     padding-bottom: 4%;
   }
+
+
 
 }

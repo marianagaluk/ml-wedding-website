@@ -80,9 +80,15 @@ function getSize() {
       toggleContainerFluid();
     }
 
-    if (x > 768) {
-      var image = document.getElementById('mainCover').src = 'assets/mainpic.gif';;
+    if (x > 768 && x <= 1439 ) {
+      var image = document.getElementById('mainCover').src = 'assets/mainpic_3.gif';;
       console.log('big');
+
+    }
+
+    if (x > 1439 ) {
+      var image = document.getElementById('mainCover').src = 'assets/mainpic.gif';;
+      console.log('high');
 
     }
 
@@ -90,5 +96,7 @@ function getSize() {
     var image = document.getElementById('mainCover').src = 'assets/mainpic_2_2.gif';
     console.log('small');
       }
+
+
 
 }

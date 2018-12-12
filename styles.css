@@ -214,7 +214,7 @@ nav.sticky {
 
 
 #span-footer {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
   background-color: rgb(255,255,255, 0.8);
   border-radius: 0.25rem;
@@ -471,6 +471,10 @@ html {
 
   #gift {
     max-width: 80%;
+  }
+
+  #span-footer {
+    font-size: 1rem;
   }
 
 }

@@ -469,6 +469,10 @@ html {
     max-width: 80%;
   }
 
+  #gift {
+    max-width: 70%;
+  }
+
 }
 
 @media only screen and (max-width: 574px) {
@@ -527,7 +531,7 @@ html {
   }
 
   .icon {
-    width: 15%;
+    width: 30%;
   }
 
   #gift {
@@ -603,7 +607,7 @@ html {
   }
 
   .icon {
-    width: 10%;
+    width: 30%;
   }
 
   #footer {

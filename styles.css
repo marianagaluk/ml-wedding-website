@@ -131,9 +131,8 @@ nav.sticky {
 }
 
 #cover {
-  height: 100%;
   position: relative;
-  background: url("assets/mainpic.gif") no-repeat center center;
+  background: url("assets/mainpic.gif") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

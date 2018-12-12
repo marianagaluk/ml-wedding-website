@@ -91,9 +91,6 @@ nav.sticky {
 .sans {
   font-family: helvetica;
   font-weight: 300;
-  font-size: 0.88rem;
-  padding: 0;
-  margin: 0;
 }
 
 .sans-bold {
@@ -428,6 +425,10 @@ html {
     background-color: #6c7b52;
     box-shadow: 0 3px #666;
     transform: translateY(4px);
+  }
+
+  .sans {
+    font-size: 0.9rem;
   }
 
   nav li {

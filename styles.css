@@ -539,6 +539,12 @@ html {
   }
 }
 
+/* @media only screen and (max-width: 1240px) and (min-width: 769px) {
+    #cover {
+      max-height: 90%;
+    }
+} */
+
 @media only screen and (max-width: 767px) and (min-width: 430px) {
   #calendar {
     width: 30%;

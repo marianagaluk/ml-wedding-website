@@ -97,7 +97,7 @@ nav.sticky {
 .sans-bold {
   font-family: helvetica;
   font-weight: normal;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 .sans-h {
@@ -304,6 +304,13 @@ ul li a:hover:after {
 
 
 /* -------------- media queries ----------------- */
+@media only screen and (min-width: 1500px) {
+
+html {
+    font-size: 18px;
+}
+
+}
 
 @media only screen and (min-width: 1400px) {
 
@@ -429,6 +436,10 @@ ul li a:hover:after {
     transform: translateX(-50%);
     width: 50%;
     transition: .5s;
+  }
+
+  button {
+    font-size: 1.2rem;
   }
 }
 

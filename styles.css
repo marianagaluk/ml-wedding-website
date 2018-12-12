@@ -91,7 +91,7 @@ nav.sticky {
 .sans {
   font-family: helvetica;
   font-weight: 300;
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
 }
 
 .sans-bold {

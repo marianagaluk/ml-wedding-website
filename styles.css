@@ -67,7 +67,7 @@ nav.sticky {
   width: 100%;
   z-index: 1;
   box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
-  
+
 }
 
 #logo {
@@ -140,6 +140,10 @@ nav.sticky {
   height: 110vh; */
   padding: 0;
   margin: 0 auto;
+}
+
+#main-cover {
+  max-width: 100%;
 }
 
 #maintext {

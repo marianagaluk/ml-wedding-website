@@ -399,6 +399,7 @@ html {
 
   .hamburger {
     float: right;
+    font-size: 3rem;
   }
 
 
@@ -456,9 +457,6 @@ html {
     transition: .5s;
   } */
 
-  /* button {
-    font-size: 1.5rem;
-  } */
 }
 
 @media only screen and (max-width: 574px) {

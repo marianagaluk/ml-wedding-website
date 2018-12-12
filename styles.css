@@ -8,7 +8,7 @@
 /* --------------------------------------------------------------------------------------- */
 
 html {
-  font-size: calc(0.40rem + (1vw - 4.3px) * 1.1111);
+  font-size: calc(0.40rem + (1vw - 4.8px) * 1.1111);
   margin: 0 auto;
   font-family: helvetica, arial, sans-serif;
   scroll-behavior: smooth;
@@ -300,66 +300,6 @@ ul li a:hover:after {
 }
 
 
-@media only screen and (max-width: 768px){
-
-  html {
-    font-size: 1.2rem;
-  }
-
-  .toggle-nav .hamburger {
-    display: block;
-  }
-
-  .toggle-nav {
-    height: 48px;
-  }
-
-  .hamburger {
-    margin-right: 15px;
-    float: right;
-    font-size: 3rem;;
-    transform: rotate(90deg);
-    height: 40px;
-  }
-
-  .hamburger:hover {
-    cursor: pointer;
-  }
-
-  nav li {
-    display: block;
-  }
-
-  li {
-    padding: 0;
-  }
-
-  nav a {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-
-  nav li:last-child {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  nav ul {
-    display: none;
-  }
-
-  ul li a:hover:after {
-    transform: translateX(-50%);
-    width: 50%;
-    transition: .5s;
-  }
-}
-
 /* -------------- media queries ----------------- */
 
 @media only screen and (min-width: 1400px) {
@@ -425,6 +365,66 @@ ul li a:hover:after {
 
   #calendar {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+
+  html {
+    font-size: calc(1rem + ((1vw - 4.8px) * 1.1111))
+  }
+
+  .toggle-nav .hamburger {
+    display: block;
+  }
+
+  .toggle-nav {
+    height: 48px;
+  }
+
+  .hamburger {
+    margin-right: 15px;
+    float: right;
+    font-size: 3rem;;
+    transform: rotate(90deg);
+    height: 40px;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  nav li:last-child {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  ul li a:hover:after {
+    transform: translateX(-50%);
+    width: 50%;
+    transition: .5s;
   }
 }
 

@@ -39,7 +39,6 @@ nav.sticky {
   background: white;
 }
 
-
 #navbar {
   overflow: hidden;
 }
@@ -67,8 +66,8 @@ nav.sticky {
   top: 0;
   width: 100%;
   z-index: 1;
-  margin: 0 auto;
   box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+  padding-right: 4%;
 }
 
 #logo {
@@ -399,12 +398,7 @@ html {
   }
 
   .hamburger {
-    margin-right: 15px;
     float: right;
-    font-size: 3rem;;
-    transform: rotate(90deg);
-    height: 40px;
-    padding: 1%;
   }
 
 
@@ -446,10 +440,6 @@ html {
     text-align: center;
   }
 
-  nav li:last-child {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  }
-
   ul {
     margin: 0;
     padding: 0;
@@ -458,6 +448,7 @@ html {
   nav ul {
     display: none;
   }
+
 
   /* ul li a:hover:after {
     transform: translateX(-50%);

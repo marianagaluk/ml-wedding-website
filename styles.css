@@ -67,7 +67,7 @@ nav.sticky {
   width: 100%;
   z-index: 1;
   box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
-  padding-right: 4%;
+  
 }
 
 #logo {
@@ -131,13 +131,15 @@ nav.sticky {
 }
 
 #cover {
-  position: relative;
+  /* position: relative;
   background: url("assets/mainpic.gif") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 110vh; */
+  padding: 0;
+  margin: 0 auto;
 }
 
 #maintext {
@@ -251,9 +253,10 @@ nav.sticky {
 
 nav {
   position: relative;
-  min-height: 40px;
+  min-height: 10px;
   margin: 0 auto;
   text-align: center;
+  padding: 0;
 }
 
 nav li {
@@ -274,6 +277,7 @@ ul li a {
   color: black;
   position: relative;
 }
+
 ul li a:before {
   position: absolute;
   content: '';
@@ -469,6 +473,8 @@ html {
   #img-sobrenos {
     max-width: 80%;
   }
+
+
 
   #gift {
     max-width: 70%;

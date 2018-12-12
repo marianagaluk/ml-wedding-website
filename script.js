@@ -26,6 +26,11 @@ function getInitialSize() {
   if (winWidth >= 1240) {
     toggleContainer();
   }
+
+  else if (winWidth < 768) {
+    var image = document.getElementById('mainCover').src = 'assets/mainpic_2_2.gif';
+    console.log('small');
+  }
 }
 
 function stickyNavbar() {
@@ -75,13 +80,15 @@ function getSize() {
       toggleContainerFluid();
     }
 
+    if (x > 768) {
+      var image = document.getElementById('mainCover').src = 'assets/mainpic.gif';;
+      console.log('big');
+
+    }
+
+    if (x < 768) {
+    var image = document.getElementById('mainCover').src = 'assets/mainpic_2_2.gif';
+    console.log('small');
+      }
+
 }
-
-
-
-
-
-
-
-// -----------------------------------------------------------------------------
-//Button lista de presentes

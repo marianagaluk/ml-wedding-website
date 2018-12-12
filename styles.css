@@ -174,6 +174,12 @@ nav.sticky {
   display: none;
 }
 
+#gift-options-soon {
+    display: none;
+    color: red;
+    padding-top: 5%;
+}
+
 .btn_presente {
   box-shadow: 0 5px #999;
   border: 0;
@@ -401,9 +407,26 @@ html {
     height: 40px;
   }
 
-  /* .hamburger:hover {
-    cursor: pointer;
-  } */
+
+  .btn_presente {
+    box-shadow: 0 2px #999;
+    border: 0;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .btn_presente:hover {
+    /* background-color: rgb(64, 64, 64); */
+    background-color: #6c7b52;
+    /* color: black; */
+    font-weight: 350;
+  }
+
+  .btn_presente:active {
+    background-color: #6c7b52;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
 
   nav li {
     display: block;

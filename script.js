@@ -13,10 +13,10 @@ var height = navbar.offsetHeight + "px";
 
 //onclick event to display the hidden div
 function hideUnhide() {
-  var x = document.getElementById("gift-options");
+  var x = document.getElementById("gift-options-soon");
       if (x.style.display == "none" || x.style.display == "") {
           x.style.display = "block";
-          location.href='#gift-options';
+          location.href='#gift-options-soon';
       } else {
           x.style.display = "none";
       }

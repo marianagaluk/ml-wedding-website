@@ -131,12 +131,14 @@ nav.sticky {
 }
 
 #cover {
+  height: 100%;
   position: relative;
-  background: url("assets/mainpic_2_1440.jpg") center center;
+  background: url("assets/mainpic.gif") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100vh;
 }
 
 #maintext {

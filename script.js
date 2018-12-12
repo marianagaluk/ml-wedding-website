@@ -23,7 +23,7 @@ function hideUnhide() {
   }
 
 function getInitialSize() {
-  if (winWidth >= 1400) {
+  if (winWidth >= 1240) {
     toggleContainer();
   }
 }

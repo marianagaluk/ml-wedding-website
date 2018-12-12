@@ -8,7 +8,7 @@
 /* --------------------------------------------------------------------------------------- */
 
 html {
-  font-size: calc(0.3rem + (1vw - 4.3px) * 1.1111);
+  font-size: calc(0.35rem + (1vw - 4.3px) * 1.1111);
   margin: 0 auto;
   font-family: helvetica, arial, sans-serif;
   scroll-behavior: smooth;
@@ -424,6 +424,11 @@ ul li a:hover:after {
 }
 
 @media only screen and (max-width: 574px) {
+
+  html {
+    font-size: 1rem;
+  }
+
   #logo {
     padding: 1%;
   }

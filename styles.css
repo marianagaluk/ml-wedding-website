@@ -470,7 +470,7 @@ html {
   }
 
   #gift {
-    max-width: 70%;
+    max-width: 80%;
   }
 
 }
@@ -534,10 +534,10 @@ html {
     width: 30%;
   }
 
-  #gift {
+  /* #gift {
     width: 55%;
     padding: 5%;
-  }
+  } */
 
   #footer {
     background: url("assets/icons/Untitled-2.png") no-repeat center center;
@@ -596,10 +596,10 @@ html {
     max-width: 45%;
   }
 
-  #gift {
+  /* #gift {
     width: 55%;
     padding: 5%;
-  }
+  } */
 
   #logo {
     width: 40%;

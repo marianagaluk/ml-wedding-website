@@ -8,7 +8,7 @@
 /* --------------------------------------------------------------------------------------- */
 
 html {
-  font-size: calc(0.35rem + (1vw - 4.3px) * 1.1111);
+  font-size: calc(0.40rem + (1vw - 4.3px) * 1.1111);
   margin: 0 auto;
   font-family: helvetica, arial, sans-serif;
   scroll-behavior: smooth;
@@ -207,7 +207,7 @@ nav.sticky {
 
 
 #span-footer {
-  font-size: 0.8em;
+  font-size: 1rem;
   font-weight: 400;
   background-color: rgb(255,255,255, 0.8);
   border-radius: 0.25rem;
@@ -301,6 +301,11 @@ ul li a:hover:after {
 
 
 @media only screen and (max-width: 768px){
+
+  html {
+    font-size: 1.2rem;
+  }
+
   .toggle-nav .hamburger {
     display: block;
   }
@@ -424,10 +429,6 @@ ul li a:hover:after {
 }
 
 @media only screen and (max-width: 574px) {
-
-  html {
-    font-size: 1rem;
-  }
 
   #logo {
     padding: 1%;

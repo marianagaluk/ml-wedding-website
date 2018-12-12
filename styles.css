@@ -91,7 +91,7 @@ nav.sticky {
 .sans {
   font-family: helvetica;
   font-weight: 300;
-  /* font-size: 0.8rem; */
+  font-size: 0.9rem;
 }
 
 .sans-bold {
@@ -461,9 +461,9 @@ html {
     transition: .5s;
   } */
 
-  button {
+  /* button {
     font-size: 1.5rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 574px) {

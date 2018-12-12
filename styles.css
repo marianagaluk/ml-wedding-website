@@ -8,7 +8,7 @@
 /* --------------------------------------------------------------------------------------- */
 
 html {
-  font-size: calc(0.5rem + (1vw - 4.8px) * 1.1111);
+  font-size: calc(0.55rem + (1vw - 4.8px) * 1.1111);
   margin: 0 auto;
   font-family: helvetica, arial, sans-serif;
   scroll-behavior: smooth;
@@ -371,7 +371,7 @@ ul li a:hover:after {
 @media only screen and (max-width: 768px){
 
   html {
-    font-size: calc(1rem + ((1vw - 4.8px) * 1.1111))
+    font-size: calc(1.5rem + ((1vw - 4.8px) * 1.1111))
   }
 
   .toggle-nav .hamburger {

@@ -370,8 +370,9 @@ ul li a:hover:after {
 
 @media only screen and (max-width: 768px){
 
-  html {
-    font-size: calc(1.5rem + ((1vw - 4.8px) * 1.1111))
+  body {
+    /* font-size: calc(1.5rem + ((1vw - 4.8px) * 1.1111)); */
+    font-size: 1.3vw;
   }
 
   .toggle-nav .hamburger {

@@ -446,8 +446,18 @@ html {
     display: none;
   }
 
- #osNoivos{
-   padding-bottom: 2%;
+ /* #osNoivos{
+   padding-bottom: 3%;
+ } */
+
+ #oCasamento {
+   padding-right: 0;
+   padding-left: 0;
+ }
+
+ #oCasamento-row1 {
+   padding-right: 0;
+   padding-left: 0;
  }
   /* ul li a:hover:after {
     transform: translateX(-50%);
@@ -505,7 +515,7 @@ html {
   }
 
   #img-sobrenos {
-    max-width: 45%;
+    max-width: 80%;
   }
 
   #logo {

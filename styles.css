@@ -423,10 +423,6 @@ html {
     transform: translateY(4px);
   }
 
-  .sans {
-    font-size: 1rem;
-  }
-
   nav li {
     display: block;
   }
@@ -472,6 +468,10 @@ html {
 
   header.sticky {
     max-height: 10%;
+  }
+
+  .sans {
+    font-size: 1.1rem;
   }
 
 }

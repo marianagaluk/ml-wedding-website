@@ -13,23 +13,23 @@ var height = navbar.offsetHeight + "px";
 
 //onclick event to display the hidden div
 function hideUnhide() {
-  var x = document.getElementById("gift-options-soon");
+  var x = document.getElementById("gift-options");
       if (x.style.display == "none" || x.style.display == "") {
           x.style.display = "block";
-          location.href='#gift-options-soon';
+          location.href='#gift-options';
       } else {
           x.style.display = "none";
       }
   }
 
+//gets initial width of the screen and verifies if it is bigger than or equal to 1200px
 function getInitialSize() {
   if (winWidth >= 1200) {
     toggleContainer();
   }
 
   else if (winWidth < 768) {
-    var image = document.getElementById('mainCover').src = 'assets/mainpic_2_2.gif';
-    console.log('small');
+    getSize();
   }
 }
 

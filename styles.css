@@ -8,7 +8,7 @@
 /* --------------------------------------------------------------------------------------- */
 
 html {
-  font-size: calc(0.40rem + (1vw - 4.8px) * 1.1111);
+  font-size: calc(0.5rem + (1vw - 4.8px) * 1.1111);
   margin: 0 auto;
   font-family: helvetica, arial, sans-serif;
   scroll-behavior: smooth;
@@ -83,9 +83,9 @@ nav.sticky {
   width: 30%;
 }
 
-.text-small {
+/* .text-small {
   font-size: 0.7em;
-}
+} */
 
 .sans {
   font-family: helvetica;
@@ -304,9 +304,9 @@ ul li a:hover:after {
 
 @media only screen and (min-width: 1400px) {
 
-  html {
+  /* html {
     font-size: 1rem;
-  }
+  } */
 
   #logo {
     width: 30%;
@@ -488,9 +488,9 @@ ul li a:hover:after {
     padding-right: 35%;
   }
 
-  .text-small {
+  /* .text-small {
     font-size: 0.85em;
-  }
+  } */
 
   #calendar {
     width: 25%;
@@ -553,9 +553,9 @@ ul li a:hover:after {
     padding-right: 35%;
   }
 
-  .text-small {
+  /* .text-small {
     font-size: 0.8em;
-  }
+  } */
 
   #sobreNos h1 {
     padding-bottom: 4%;

@@ -377,7 +377,7 @@ html {
 @media only screen and (max-width: 768px){
 
   body {
-    font-size: calc(1.7rem + ((1vw - 4.8px) * 1.1111));
+    font-size: calc(2rem + ((1vw - 4.8px) * 1.1111));
     /* font-size: 1.3vw; */
   }
 

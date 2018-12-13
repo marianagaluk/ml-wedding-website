@@ -81,7 +81,7 @@ function getSize() {
     }
 
     if (x > 768 ) {
-      var image = document.getElementById('mainCover').src = 'assets/mainpic.jpg';;
+      var image = document.getElementById('mainCover').src = 'assets/mainpic.jpg';
       console.log('big');
 
     }

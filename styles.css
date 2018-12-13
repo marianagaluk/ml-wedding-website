@@ -461,11 +461,13 @@ html {
     max-width: 80%;
   }
 
-
-
   #gift {
     max-width: 70%;
     padding: 5%;
+  }
+
+  #calendar {
+    width: 50%;
   }
 
   #span-footer {
@@ -550,10 +552,6 @@ html {
   /* .text-small {
     font-size: 0.85em;
   } */
-
-  #calendar {
-    width: 25%;
-  }
 
   #portico {
     width: 25%;

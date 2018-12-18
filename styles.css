@@ -158,8 +158,7 @@ nav.sticky {
 }
 
 .pink {
-  /* background-color: #c95f81; */
-  background-color: gray;
+  background-color: #c95f81;
 }
 
 .bkg {
@@ -243,8 +242,7 @@ nav.sticky {
 .btn_presente {
   box-shadow: 0 5px #999;
   border: 0;
-  /* color: white; */
-  color: #E0E0E0;
+  color: white;
 }
 
 /* .btn_presente:hover {

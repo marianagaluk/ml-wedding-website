@@ -43,6 +43,10 @@ nav {
   padding: 0;
 }
 
+ul {
+  margin: 0;
+}
+
 nav li {
   display: inline-block;
   padding: 1% 2%;
@@ -92,6 +96,10 @@ nav.sticky {
   background: white;
 }
 
+.sticky .hamburger {
+  padding-right: 7%;
+}
+
 #navbar {
   overflow: hidden;
 }
@@ -111,6 +119,7 @@ nav.sticky {
 
 .sticky {
   position: fixed;
+  min-height: 10px;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -248,6 +257,7 @@ nav.sticky {
 .btn_presente:hover {
   background-color: #6c7b52;
   font-weight: 350;
+  color: white;
 }
 
 .btn_presente:active {
@@ -311,10 +321,6 @@ nav.sticky {
 
 @media only screen and (min-width: 1400px) {
 
-  /* html {
-    font-size: 1rem;
-  } */
-
   #logo {
     width: 30%;
   }
@@ -365,8 +371,13 @@ nav.sticky {
 
 @media only screen and (max-width: 768px){
 
+  html, body {
+    margin: 0 auto;
+    padding: 0.5%;
+  }
+
   body {
-    font-size: calc(2rem + ((1vw - 4.8px) * 1.1111));
+    font-size: calc(2.4rem + ((1vw - 4.8px) * 1.1111));
   }
 
   .toggle-nav .hamburger {
@@ -374,12 +385,13 @@ nav.sticky {
   }
 
   .toggle-nav {
-    height: 48px;
+    max-height: 48px;
   }
 
   .hamburger {
     float: right;
     font-size: 3rem;
+    padding-right: 5%;
   }
 
 
@@ -391,9 +403,7 @@ nav.sticky {
   }
 
   .btn_presente:hover {
-    /* background-color: rgb(64, 64, 64); */
     background-color: #6c7b52;
-    /* color: black; */
     font-weight: 350;
   }
 
@@ -483,14 +493,13 @@ nav.sticky {
     font-size: 1.2rem;
   }
 
+  /* .hamburguer{
+    padding-top: 3%;
+  } */
+
 }
 
 @media only screen and (max-width: 429px) {
-
-  html, body {
-    margin: 0 auto;
-    padding: 1%;
-  }
 
   #oCasamento {
     display: grid;

@@ -22,7 +22,7 @@
 
 
     <nav id="navbar" class="p-0 m-0">
-      <div class="toggle-nav align-self-center p-0">
+      <div id="hamburger-div" class="toggle-nav align-self-center p-0">
         <span class="hamburger align-self-center fas fa-bars align-self-center py-3"></span>
       </div>
         <ul id="navbar-ul" class="">
@@ -76,14 +76,14 @@
         <img class="icon pb-3" src="assets/icons/church.png" alt="Icone igreja"/>
         <h4 class="sans-h py-3">Cerimônia 16:30</h4>
         <p class="subtitle">Igreja Sagrada Família<br />
-          <span class="sans">Rua José do Patrocínio, 954 - Cidade Baixa</span><br /><a href="https://goo.gl/maps/wCh1HXf6w752" target="_blank">Veja no mapa</a></p>
+          <span class="sans">Rua José do Patrocínio, 954 - Cidade Baixa</span><br /><a href="https://goo.gl/maps/9AG8S3UPwfm" target="_blank">Veja no mapa</a></p>
       </div>
       <div class="col-md-2 ml-md-auto"></div>
       <div class="col-md-4 ml-md-auto">
         <img class="icon pb-3" src="assets/icons/glass.png" alt="Icone taças"/>
         <h4 class="sans-h py-3">Recepção 18:00</h4>
         <p class="subtitle">Sociedade de Engenharia do RS<br />
-          <span class="sans">Avenida Coronel Marcos, 163 - Pedra Redonda</span><br /><a href="https://goo.gl/maps/5vE95KiFVz42" target="_blank">Veja no mapa</a></p>
+          <span class="sans">Avenida Coronel Marcos, 163 - Pedra Redonda</span><br /><a href="https://goo.gl/maps/GuDsAjbNx5C2" target="_blank">Veja no mapa</a></p>
       </div>
       <div class="col-md-1 ml-md-auto"></div>
     </div>
@@ -110,7 +110,7 @@
   </div>
 
   <!-- _____________________________ SECTION 3 _____________________________ -->
-  <div class="section container-fluid px-5 pt-3" id="listaPresentes">
+  <div class="section container-fluid px-5 pb-3" id="listaPresentes">
 
     <h1 class="pt-5 pl-5">Lista de Presentes</h1>
     <div class="row px-5 py-4">
@@ -135,10 +135,19 @@
 
       </div>
 
-
-      <div id="gallery">
-
-      </div>
+      <!-- _____________________________ GALERY _____________________________ -->
+      <!-- <div id="gallery" class="section container-fluid px-5">
+        <div class="row px-5 py-4">
+          <div id="foto1" class="col-md-4 ml-md-auto align-self-center"></div>
+          <div id="foto2" class="col-md-4 ml-md-auto align-self-center"></div>
+          <div id="foto3" class="col-md-4 ml-md-auto align-self-center"></div>
+        </div>
+        <div class="row px-5 py-4">
+          <div id="foto4" class="col-md-4 ml-md-auto align-self-center"></div>
+          <div id="foto5" class="col-md-4 ml-md-auto align-self-center"></div>
+          <div id="foto6" class="col-md-4 ml-md-auto align-self-center"></div>
+        </div>
+      </div> -->
 
       <!-- _____________________________ FOOTER _____________________________ -->
       <div id="footer" class="section pt-5 pb-5 text-center">
@@ -153,12 +162,14 @@
           $('nav ul').click(function () {
             $(this).toggleClass('expand').css('display', '');
           });
+
           $('.hamburger').click(function () {
             //400 is the speed in which it toggles
             $('nav ul').slideToggle(400, function() {
               $(this).toggleClass('expand').css('display', '');
             });
           });
+
         });
       </script>
 

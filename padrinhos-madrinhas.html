@@ -21,10 +21,11 @@
   <body onresize="getSize()">
 
 
-      <nav id="navbar" class="p-0 m-0">
-          <div class="toggle-nav align-self-center p-0">
-            <span class="hamburger align-self-center p-0"><i class="fas fa-bars align-self-center"></i></span>
-          </div>
+    <nav id="navbar" class="p-0 m-0">
+      <div id="hamburger-div" class="toggle-nav align-self-center p-0">
+        <span class="hamburger align-self-center fas fa-bars align-self-center py-3"></span>
+      </div>
+        <ul id="navbar-ul" class="">
             <ul id="navbar-ul" class="">
               <li class=""><a class="text-uppercase" href="http://test.marieluis.net">Home</a></li>
               <li class=""><a class="text-uppercase" href="#madrinhas_padrinhos">Instruções</a></li>
@@ -53,7 +54,7 @@
 
   <div class="section container-fluid px-5 py-5" id="madrinhas_padrinhos">
   <h1 class="sans-bold px-3 pt-5">A Missão dos Padrinhos</h1>
-    <div class="row px-5 pt-5">
+    <div class="row px-5 pt-5 pb-5">
 
     <div class="col-md-7 ml-md-auto">
 
@@ -73,7 +74,7 @@
     <div class="row pt-5">
       <div class="col-md-6 ml-md-auto px-3">
         <h2 class="sans-bold pb-5">Madrinhas</h2>
-        <p class="sans">
+        <p class="sans pb-5">
             Antes de mais nada queremos que vocês se sintam lindas, cada uma
             conforme sua personalidade. Optamos por definir uma paleta de cores
             com muito carinho que vai do rosa ao roxo, para que cada uma possa
@@ -93,7 +94,7 @@
     </div>
       <div class="row px-5 text-center pt-5">
         <div class="col-md-12 ml-md-auto align-self-center py-5">
-        <img class="color_pallette" class="mx-auto d-block img-fluid" src="assets/color_pallette.png" alt=""/>
+        <img id="color_pallette" class="mx-auto d-block img-fluid" src="assets/color_pallette.png" alt=""/>
       </div>
       </div>
   </div>
@@ -135,7 +136,7 @@
     <span id="span-footer" class=" mx-auto sans-bold py-3 px-2">Copyright 2018, Mariana e Luis</span>
   </div>
 
-  <!-- Bootstrap core JavaScript ================================================== -->
+  <!-- Jquery ================================================== -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript">
     //if the DOM is loaded
@@ -143,12 +144,14 @@
       $('nav ul').click(function () {
         $(this).toggleClass('expand').css('display', '');
       });
+
       $('.hamburger').click(function () {
         //400 is the speed in which it toggles
         $('nav ul').slideToggle(400, function() {
           $(this).toggleClass('expand').css('display', '');
         });
       });
+
     });
   </script>
 

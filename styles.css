@@ -436,7 +436,7 @@ body {
 
   .btn_presente:active {
     background-color: #6c7b52;
-    box-shadow: 0 3px #666;
+    box-shadow: 0 4px #666;
     transform: translateY(4px);
   }
 

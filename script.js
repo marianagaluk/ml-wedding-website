@@ -80,9 +80,15 @@ function getSize() {
       toggleContainerFluid();
     }
 
-    if (x > 768 ) {
+    if (x > 1440 ) {
       var image = document.getElementById('mainCover').src = 'assets/mainpic.jpg';
       console.log('big');
+
+    }
+
+    if (x > 768 && x <= 1440 ) {
+      var image = document.getElementById('mainCover').src = 'assets/mainpic_small.jpg';
+      console.log('normal');
 
     }
 

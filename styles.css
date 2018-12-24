@@ -412,7 +412,7 @@ body {
   }
 
   .toggle-nav {
-    max-height: 48px;
+    height: 48px;
   }
 
   .hamburger {

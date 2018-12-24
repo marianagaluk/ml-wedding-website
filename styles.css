@@ -423,10 +423,11 @@ body {
 
 
   .btn_presente {
-    box-shadow: 0 3px #999;
+    box-shadow: 0 6px #999;
     border: 0;
     color: white;
     font-size: 2rem;
+    padding: 1rem;
   }
 
   .btn_presente:hover {
@@ -436,7 +437,7 @@ body {
 
   .btn_presente:active {
     background-color: #6c7b52;
-    box-shadow: 0 4px #666;
+    box-shadow: 0 6px #666;
     transform: translateY(4px);
   }
 

@@ -200,7 +200,7 @@ nav.sticky {
 }
 
 #img-sobrenos {
-  max-width: 80%;
+  max-width: 90%;
 }
 
 #listaPresentes {
@@ -485,7 +485,7 @@ body {
  }
 
   #img-sobrenos {
-    max-width: 80%;
+    max-width: 90%;
   }
 
   #gift {
@@ -520,9 +520,9 @@ body {
     max-height: 10%;
   }
 
-  h4 {
+  /* h4 {
     font-size: 2rem;
-  }
+  } */
 
   .subtitle {
     /* font-size: 1.5rem; */
@@ -541,10 +541,6 @@ body {
 
   #sobreNos h1 {
     padding-bottom: 4%;
-  }
-
-  #img-sobrenos {
-    max-width: 80%;
   }
 
   #logo {
@@ -584,9 +580,9 @@ body {
     position: relative;
   }
 
-  #img-sobrenos {
+  /* #img-sobrenos {
     max-width: 45%;
-  }
+  } */
 
   #logo {
     width: 40%;

@@ -87,7 +87,7 @@ function getSize() {
     }
 
     if (x > 768 && x <= 1440 ) {
-      var image = document.getElementById('mainCover').src = 'assets/mainpic_small.jpg';
+      var image = document.getElementById('mainCover').src = 'assets/mainpic_2.jpg';
       console.log('normal');
 
     }

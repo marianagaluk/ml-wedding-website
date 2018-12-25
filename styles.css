@@ -254,7 +254,7 @@ nav.sticky {
 }
 
 #icon-heart {
-  width: 2%;
+  width: 10%;
 }
 
 #calendar {
@@ -377,6 +377,10 @@ body {
     /* transform: translateX(-50%); */
     width: 100%;
     transition: .5s;
+  }
+
+  #icon-heart {
+    width: 5%;
   }
 }
 
@@ -521,12 +525,8 @@ body {
   }
 
   .subtitle {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-weight: normal;
-  }
-
-  .sans {
-    font-size: 1.2rem;
   }
 
 }

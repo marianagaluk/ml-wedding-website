@@ -392,7 +392,7 @@ body {
   }
 
   body {
-    font-size: calc(1rem + ((1vw - 4.8px) * 1.1111));
+    font-size: calc(1.1rem + ((1vw - 4.8px) * 1.1111));
   }
 
   #saudacao_padrinhos {
@@ -507,6 +507,18 @@ body {
 
 }
 
+@media only screen and (max-width: 670px){
+
+  body {
+    font-size: calc(1.5rem + ((1vw - 4.8px) * 1.1111));
+  }
+
+  .btn_presente {
+    font-size: 1.5rem;
+  }
+}
+
+
 @media only screen and (max-width: 574px) {
 
 
@@ -564,7 +576,8 @@ body {
   }
 
   #gift {
-    max-width: 30%;
+    padding-top: 10px;
+    max-width: 40%;
   }
 
 }
